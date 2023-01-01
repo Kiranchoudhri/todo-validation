@@ -1,32 +1,31 @@
-GET http://localhost:3001/todos
+
+GET http://localhost:3001/todos/?status=TO%20DO 
 
 ### 
-GET http://localhost:3001/todos/?category=LEARNING&priority=HIGH
+GET http://localhost:3001/todos/1/ 
 
 ### 
-GET http://localhost:3001/todos/4/ 
-
-### 
-GET http://localhost:3001/agenda/?date=2021-12-12 
+GET http://localhost:3001/agenda/?date=2021-14-12 
 
 ### 
 POST http://localhost:3001/todos/ 
 Content-Type: application/json 
 
 {
-"id": 4,
-"todo": "Fix the bug",
-"priority": "MEDIUM",
-"status": "DONE",
-"category": "WORK",
-"dueDate": "2021-01-25"
+ "id": 11,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-12-53"
 }
 
 ### 
-PUT http://localhost:3001/todos/5/ 
+PUT http://localhost:3001/todos/1/ 
 Content-Type: application/json 
 
-{ "dueDate": "2021-14-12" }
+{ "dueDate": "2021-03-16" }
 
 ### 
 DELETE http://localhost:3001/todos/8/
+
